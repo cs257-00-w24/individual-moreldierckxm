@@ -1,2 +1,2 @@
 # individual-template
-Template for individual CS257 deliverables
+Maxence Morel Dierckx, team c
