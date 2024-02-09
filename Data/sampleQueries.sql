@@ -18,7 +18,7 @@ GROUP BY dateRep
 ORDER BY countriesAndTerritories DESC, dateRep DESC;
 
 -- getCaseFatalityRatioByRegion
-SELECT dateRep, (SUM(deaths)/SUM(cases))*100 AS case_fatality_ratio
+SELECT dateRep, (SUM(deaths)/SUM(cases)) AS case_fatality_ratio
 FROM covid_cases_worldwide
 WHERE (continentExp = '{region}' OR countriesAndTerritories = '{region}' OR '{region}' = 'global')
 AND dateRep BETWEEN '{start_date}' AND '{end_date}'
