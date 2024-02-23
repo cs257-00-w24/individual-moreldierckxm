@@ -1,5 +1,6 @@
 # individual-template
-Maxence Morel Dierckx, team c
+## Maxence Morel Dierckx, team c
+# My ports: 5140, 5240
 
 ### Database Setup Answers
 1. Given the dataset's straightforward nature, focusing on daily COVID-19 cases and deaths worldwide, a single table is sufficient to represent the data without complicating the schema with unnecessary relational designs. I removed specific columns that were redundant or unnecessary (e.g., `day`, `month`, `year`, `geoId`, and `countryterritoryCode`), aiming for a streamlined dataset that still retained all critical information for analysis. The selection of data types was straightforward, based on the nature of the data in each column: dates were stored as DATE, numeric values (cases, deaths, population) as INTEGER, and text fields (e.g., country names, continents) as VARCHAR to accommodate variable-length strings. No primary keys were are required since there is only one table in our database.
