@@ -7,7 +7,6 @@ CS 257, Winter 2023
 
 import flask
 from flask import render_template, request
-import json
 import sys
 
 app = flask.Flask(__name__)
