@@ -1,0 +1,346 @@
+@font-face {
+    font-family: 'Koulen';
+    src: url('Koulen-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('Poppins-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    color: #fff;
+    background-color: #E1EFF7;
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(135deg, #4e79e5 0%, #023E8A 100%);
+    box-shadow: 0 0.1em 1em #03055e86;
+    position: relative;
+    z-index: 5;
+    font-family: 'Koulen', sans-serif;
+}
+
+header nav {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 2em 0;
+    font-family: 'Koulen', sans-serif;
+}
+
+header nav h1 img {
+    height: 2.2em;
+}
+
+header nav h1 a {
+    margin: 0 20px;
+    color: #E1EFF7;
+    text-decoration: none;
+    font-style: normal;
+    font-size: 72px;
+    font-family: 'Koulen', sans-serif;
+}
+
+header nav h1 a:hover {
+    color: #fff;
+}
+
+header nav ul {
+    max-width: fit-content;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav ul li {
+    margin-left: 1em;
+}
+
+header nav ul li a {
+    color: #E1EFF7;
+    text-decoration: none;
+    font-size: 44px;
+    border-radius: 10px;
+    transition: color 0.3s ease-in-out;
+    transition: background 0.3s ease-in-out;
+    padding: 0 .5em 0;
+    font-family: 'Koulen', sans-serif;
+}
+
+header nav ul li a:hover {
+    color: #fff;
+    border-radius: 10px;
+    background-color: #01316e;
+}
+
+main {
+    background-image: url('bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #E1EFF7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#globe {
+    text-align: center;
+    width: 99vw;
+    height: 100vh;
+}
+
+#intro, #popup {
+    padding: 2em;
+    width: 30vw;
+    position: absolute;
+    top: 30%;
+    box-shadow: 0.6em 0.6em 1em #03055e83;
+    height: fit-content;
+    margin-top: auto;
+    margin-bottom: auto;
+    overflow-y: hidden;
+    border-radius: .2em;
+}
+
+#intro {
+    background: linear-gradient(135deg, #4e79e5 0%, #023E8A 100%);
+    left: 15%;
+}
+
+#intro p {
+    font-family: 'Poppins';
+    font-size: 120%;
+    padding-bottom: 2em;
+}
+
+#popup {
+    background: linear-gradient(135deg, #ffffffaf, #E1EFF7af);
+    box-shadow: none;
+    width: 20vw;
+    right: 8%;
+    display: none;
+    color: #01316e;
+}
+
+#tape {
+    min-height: 90vh;
+    margin-bottom: auto;
+    width: 55vw;
+    background: #fff;
+    color: black;
+    padding: 2em 3em;
+    font-size: 150%;
+    font-family: 'Poppins';
+    box-shadow: 0 0 1em #03055e86;
+}
+
+#tape p, #tape li, #tape a, #tape h2, #tape h3, #popup p, #popup li, #popup a, #popup h2 {
+    font-family: 'Poppins';
+}
+
+#tape ul, #popup ul {
+    padding-left: 2em;
+}
+
+#popup img {
+    max-width: 100%;
+    border-radius: .2em;
+}
+
+.labelledinput {
+    display: flex;
+    flex-direction: column;
+    margin: 0 .5em 1em;
+    background-color: #E1EFF7;
+    padding: 0 .5em .4em;
+    border-radius: .2em;
+}
+
+.labelledinput input:focus {
+    border-bottom: #4e79e5;
+    border-width: 5px;
+    border-style: solid;
+}
+
+label, input {
+    font-family: 'Poppins';
+}
+
+.labelledinput input {
+    border: 5px solid;
+    border-color: #E1EFF7;
+    border-radius: .2em;
+    padding: .4em;
+    font-size: 90%;
+    color: #023E8A;
+}
+
+.rowinput {
+    width: 100%;
+    display: table;
+    table-layout: fixed;
+}
+
+.rowinput .child {
+    display: table-cell;
+}
+
+#datalist {
+    color: #7f888d;
+    font-size: 80%;
+}
+
+span {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+hr {
+    border: 2px solid white;
+    width: 120%;
+    position: relative;
+    right: 10%;
+}
+
+.result {
+    background: linear-gradient(135deg, #E1EFF7, #c6d2f3);
+    border-radius: .2em;
+    padding: 1em 2em 1em;
+    width: 60vh;
+}
+
+.result h2 {
+    font-size: 3em;
+}
+
+#graph {
+    min-height: 20vh;
+    margin-bottom: 1em;
+}
+
+.iconpair {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.3em;
+    line-height: 2.4em;
+}
+
+.iconpair img {
+    width: 40%;
+}
+
+button {
+    background: linear-gradient(135deg, #4e79e5 0%, #023E8A 100%);
+    border: none;
+    border-radius: .5em;
+    color: white;
+    font-size: 160%;
+    width: 18%;
+    height: 2.2em;
+    float: right;
+    margin: .3em .8em .3em .3em;
+}
+
+button text {
+    padding: 0 1em;
+}
+
+button:hover {
+    cursor: pointer;
+    background: linear-gradient(to bottom, #4e79e5, #4e79e5);
+}
+
+span button {
+    margin: 0;
+    height: 100%;
+}
+
+.multiplechoice {
+    margin: 0 .5em 1em;
+    background-color: #E1EFF7;
+    padding: 0 .5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    border-radius: .2em;
+}
+
+.multiplechoice label, .multiplechoice input {
+    font-family: 'Poppins'
+}
+
+.multiplechoice label {
+    overflow: hidden;
+}
+
+#tworegions {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.region {
+    margin: 1em;
+    padding: 1em;
+    width: 100%;
+    background: linear-gradient(135deg, #4e79e5 0%, #023E8A 100%);
+    border-radius: .3em;
+    height: 57vh;
+}
+
+.region h1, .region p {
+    font-family: 'Poppins';
+    color: white;
+}
+
+footer {
+    background: linear-gradient(135deg, #03045E 0%, #023E8A 100%);
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    z-index: 4;
+}
+
+footer p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+footer a {
+    color: white;
+}
+
+a {
+    transition: color 0.3s ease-in-out;
+}
+
+.text-center {
+    text-align: center;
+}
+
+*, *:before, *:after {
+    transition: all 0.3s ease-in-out;
+}
