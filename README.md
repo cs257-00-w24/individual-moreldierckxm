@@ -16,3 +16,5 @@
 * **getDateWithHighestCasesByRegion and getDateWithHighestDeathsByRegion**: Focused on pinpointing peak outbreak days, these queries satisfy the needs of users aiming to analyze the pandemic's dynamics, possibly to evaluate response measures or to prepare for future outbreaks.
 
 * **getDayWithHighestCasesPer100000ByRegion**: Offering a per capita perspective on outbreaks, this query addresses audience actions concerned with understanding the relative impact of COVID-19, adjusting for population differences to facilitate fair comparisons between regions.
+
+This is a cool change to the README file.
